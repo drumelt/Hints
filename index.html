@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Strategy Hints</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .hint-link {
+      text-decoration: underline;
+      color: #2980b9;
+      cursor: pointer;
+      display: block;
+      margin: 10px 0;
+    }
+    .hint-text {
+      display: none;
+      margin-left: 28px;
+      margin-top: 5px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Get a Hint</h1>
+
+  <span class="hint-link" onclick="toggleHint('hint1')">EU Green</span>
+  <div id="hint1" class="hint-text">The EU's challenge is that its goal of energy transition depends on inputs it cannot control, creating a fragile supply chain dependency that exposes it to geopolitical leverage, environmental backlash, and some ethical inconsistency. To go farther you will need some hypothese about the future. For example: Governments are expected to view critical minerals as strategic assets. Export bans, tariffs, and nationalizations will rise. Despite advancements in AI-driven materials science, a large-scale substitute for lithium and cobalt won't emerge by 2030. Countries in the global south will seek tech-for-resource exchanges that incorporate ESG enforcement, moving away from extractive neo-colonial practices. Sould the EU align with china or actually use a hostile China to drive urgent political action in Europe?</div>
+
+  <span class="hint-link" onclick="toggleHint('hint2')">Apple</span>
+  <div id="hint2" class="hint-text">CoreAI is perceived merely as a supplementary feature rather than a strategic platform, whereas competitors are redefining user interactions with devices, content, and tools within AI-first ecosystems. A key paradox lies in its insistence on local inference, which compromises the model's depth and real-time updates. Additionally, its stringent App Store control stifles innovation and the development of third-party models. This lack of engagement with developers is crucial because, without their involvement, CoreAI risks losing relevance in the future.</div>
+
+  <script>
+    function toggleHint(id) {
+      const element = document.getElementById(id);
+      element.style.display = element.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
